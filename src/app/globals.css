@@ -2,20 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: url('/mona-eendra-vC8wj_Kphak-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem; /* Increase the heading size */
+  color: #f9dc5c;
+  margin-bottom: 20px; 
+  color: #f9dc5c;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px; /* Adds a little space between the input and button */
+}
+
+button.add-note {
+  background-color: #f9dc5c;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #000;
+  margin-top: 10px; /* Ensure there's a bit of space between the button and input */
+}
+
+
+.note-list {
+  margin-top: 20px;
+}
+
+.note {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #f9dc5c;
+}
+
+button.add-note {
+  background-color: #f9dc5c;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #000;
+}
+
+button.delete-note {
+  background-color: #000;
+  border: none;
+  padding: 5px 10px;
+  color: #f9dc5c;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #f9dc5c;
 }
